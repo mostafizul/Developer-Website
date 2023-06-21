@@ -1,0 +1,214 @@
+* {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+}
+
+.btn-primary {
+        width: 150px;
+        height: 64px;
+        background: #FD6E0A;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+        color: white;
+        margin-right: 30px;
+}
+
+/* header and navigation style */
+header {
+        background: #FFF8F3;
+        background-image: url("images/header_bg.png"), url("images/developer.png");
+        background-repeat: no-repeat;
+        background-position: bottom right, left;
+        margin-bottom: 180px;
+}
+
+.nav-title {
+        font-size: 45px;
+        font-weight: 800;
+}
+
+header span {
+        color: #FD6E0A;
+}
+
+header nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 200px;
+        padding: 20px 0px;
+        align-items: center;
+}
+
+header nav ul {
+        display: flex;
+        align-items: center;
+}
+
+header nav ul li {
+        list-style: none;
+        text-decoration: none;
+        margin-left: 50px;
+}
+
+/* banner style */
+
+.banner {
+        margin: 0 200px;
+        display: flex;
+        align-items: center;
+}
+
+.banner-sub-title {
+        font-weight: 600;
+        font-size: 45px;
+}
+
+.banner-title {
+        font-weight: 700;
+        font-size: 85px;
+}
+
+.banner-description {
+        color: #757575;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+}
+/* about-me Stytles */
+.about-me {
+        text-align: center;
+        margin: 0 auto;
+        padding: 130px 150px;
+        background: #FFF8F3;
+}
+
+.about-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+}
+
+.about-info div {
+        padding: 30px;
+}
+
+.about-me p {
+        margin-top: 30px;
+        color: #757575;
+}
+
+.about-info span {
+        color: #757575;
+}
+
+/* What-I-Do Styles */
+.What-i-do {
+        text-align: center;
+        margin: 0 auto;
+        padding: 130px 150px;
+}
+.What-i-do p{
+        margin-top: 20px;
+}
+.skills-container {
+        margin-top: 80px;
+        display: flex;
+        gap: 24px;
+}
+.skill {
+        padding: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        margin: 0px 10px;
+        text-align: left;
+        font-size: 16px;
+        text-align: justify;
+}
+.skill-title{
+        margin: 20px 0px;
+}
+/* Resume Styles */
+.Resume{
+        margin: 0 auto;
+        padding: 130px 150px;  
+}
+.Resume-title{
+        text-align: center;
+        margin-bottom: 70px;
+}
+.resume-container{
+        display:flex;
+        gap: 50px;
+}
+.Resume hr{
+        width: 90%;
+}
+.education, .experience{
+        margin-bottom: 20px;
+        margin-top: 20px;
+}
+.education-container-title, .experience-container-title{
+        margin-bottom:30px;
+}
+/* Footer styles */
+footer{
+        margin: 0 auto;
+        padding: 130px 150px;   
+        background: #FFF8F3; 
+}
+.footer-container{
+        display: flex;
+        gap: 90px;
+}
+.footer-description{
+        flex-basis: 50%;
+}
+.footer-description h3,p{
+        margin-bottom: 20px;
+}
+.form h2{
+        margin-bottom: 28px;
+}
+form input,textarea{
+        margin-bottom: 24px;
+        padding: 10px 10px;
+        border: none;
+        width: 100%;
+}
+/* Media Queries */
+@media screen and (max-width: 780px) {
+        header nav {
+                display: flex;
+                flex-direction: column;
+                margin: 0px 0px;
+        }
+
+        header nav ul {
+                display: flex;
+                flex-direction: column;
+        }
+
+        header nav ul li {
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-top: 30px;
+        }
+        .banner,
+        .about-info,.skills-container,.resume-container,.footer-container{
+                display: flex;
+                flex-direction: column;
+        }
+        .banner div button {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                line-height: 55px;
+                margin: 20px 0px;
+                border-radius: 5px;
+        }
+
+}
